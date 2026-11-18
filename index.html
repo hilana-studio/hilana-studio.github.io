@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hilana · Flores de crochet hechas a mano</title>
+  <meta name="description" content="Ramos y flores de crochet hechos a mano en Córdoba. Pide el tuyo por WhatsApp o Instagram.">
+  <link rel="icon" href="img/placeholder.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="marca" href="#" data-marca>Hilana</a>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#encargos">Encargos</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada">
+      <p class="etiqueta">Hecho a mano en <span data-ciudad>Córdoba</span></p>
+      <h1 data-lema>Flores de crochet que no se marchitan nunca</h1>
+      <p class="entradilla">Ramos y flores tejidos punto a punto, en los colores que tú elijas. Para regalar o para quedártelos.</p>
+      <div class="botones">
+        <a class="boton" href="#catalogo">Ver el catálogo</a>
+        <a class="boton secundario" data-contacto="encargo" href="#">Pedir uno a medida</a>
+      </div>
+    </section>
+
+    <section class="pasos">
+      <div><span>1</span><h3>Elige</h3><p>Un ramo del catálogo o una idea tuya.</p></div>
+      <div><span>2</span><h3>Personaliza</h3><p>Colores, número de flores y envoltorio.</p></div>
+      <div><span>3</span><h3>Recíbelo</h3><p>Recogida en Córdoba o envío a toda España.</p></div>
+    </section>
+
+    <section id="catalogo" class="catalogo">
+      <h2>Catálogo</h2>
+      <div class="filtros" role="tablist" aria-label="Filtrar por categoría"></div>
+      <div class="rejilla" aria-live="polite"></div>
+    </section>
+
+    <section id="encargos" class="encargos">
+      <h2>¿Tienes una idea?</h2>
+      <p>Ramos de novia, detalles para invitados, las flores favoritas de tu madre… Cuéntamela y te digo precio y plazo sin compromiso.</p>
+      <a class="boton" data-contacto="encargo" href="#">Contar mi idea</a>
+    </section>
+
+    <section id="preguntas" class="preguntas">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Cuánto tarda un pedido?</summary><p>Las flores sueltas suelen estar en unos días. Un ramo, entre 1 y 2 semanas según el tamaño. Para fechas señaladas, mejor pedirlo con tiempo.</p></details>
+      <details><summary>¿Cómo se paga?</summary><p>Por Bizum o transferencia al confirmar el pedido.</p></details>
+      <details><summary>¿Hacéis envíos?</summary><p>Sí, a toda España. En Córdoba también se puede recoger en mano.</p></details>
+      <details><summary>¿Cómo se cuidan?</summary><p>Lejos del sol directo para que no pierdan color. Si cogen polvo, un poco de aire frío del secador las deja como nuevas.</p></details>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p><span data-marca>Hilana</span> · Hecho a mano en <span data-ciudad>Córdoba</span></p>
+    <p><a data-contacto="encargo" href="#">Contacto</a><span data-solo-instagram> · <a data-contacto="instagram" href="#">Instagram</a></span></p>
+  </footer>
+
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

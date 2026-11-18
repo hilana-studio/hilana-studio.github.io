@@ -1,0 +1,110 @@
+:root {
+  --fondo: #fbf7f2;
+  --papel: #ffffff;
+  --tinta: #3d2f2a;
+  --suave: #7a6a63;
+  --rosa: #c9677a;
+  --rosa-oscuro: #a84f62;
+  --salvia: #8fa68a;
+  --borde: #eadfd5;
+  --radio: 18px;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font: 17px/1.6 var(--sans);
+}
+a { color: var(--rosa-oscuro); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; }
+h2 { font-size: 2rem; text-align: center; margin: 0 0 1.5rem; }
+
+.cabecera {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: .8rem clamp(1rem, 4vw, 3rem);
+  background: rgba(251, 247, 242, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--borde);
+}
+.marca { font-family: var(--serif); font-size: 1.3rem; color: var(--tinta); text-decoration: none; font-weight: 600; }
+.cabecera nav { display: flex; gap: 1.2rem; }
+.cabecera nav a { color: var(--suave); text-decoration: none; font-size: .95rem; }
+.cabecera nav a:hover { color: var(--rosa-oscuro); }
+
+main > section { padding: 4rem clamp(1rem, 5vw, 3rem); max-width: 1100px; margin: 0 auto; }
+
+.portada { text-align: center; padding-top: 5rem !important; }
+.etiqueta { color: var(--salvia); text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; font-weight: 600; margin: 0; }
+.portada h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); margin: .6rem auto 1rem; max-width: 18ch; }
+.entradilla { color: var(--suave); max-width: 46ch; margin: 0 auto 2rem; font-size: 1.1rem; }
+.botones { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
+
+.boton {
+  display: inline-block; padding: .8rem 1.5rem; border-radius: 999px;
+  background: var(--rosa); color: #fff; text-decoration: none; font-weight: 600;
+  border: 2px solid var(--rosa); transition: background .2s, transform .2s;
+}
+.boton:hover { background: var(--rosa-oscuro); border-color: var(--rosa-oscuro); transform: translateY(-1px); }
+.boton.secundario { background: transparent; color: var(--rosa-oscuro); }
+.boton.secundario:hover { background: var(--rosa); color: #fff; }
+
+.pasos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; padding-top: 1rem !important; }
+.pasos div { text-align: center; }
+.pasos span {
+  display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  background: var(--salvia); color: #fff; font-weight: 700;
+}
+.pasos h3 { margin: .6rem 0 .2rem; }
+.pasos p { margin: 0; color: var(--suave); }
+
+.filtros { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+.filtros button {
+  font: inherit; font-size: .95rem; padding: .45rem 1.1rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--borde); background: var(--papel); color: var(--suave);
+}
+.filtros button[aria-selected="true"] { background: var(--tinta); color: #fff; border-color: var(--tinta); }
+
+.rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
+.tarjeta {
+  background: var(--papel); border: 1px solid var(--borde); border-radius: var(--radio);
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.tarjeta .foto { position: relative; aspect-ratio: 1; background: #f3ebe3; }
+.tarjeta img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sello {
+  position: absolute; top: .7rem; left: .7rem; background: var(--salvia); color: #fff;
+  font-size: .75rem; font-weight: 600; padding: .2rem .6rem; border-radius: 999px;
+}
+.tarjeta .cuerpo { padding: 1rem 1.2rem 1.2rem; display: flex; flex-direction: column; gap: .4rem; flex: 1; }
+.tarjeta h3 { margin: 0; font-size: 1.25rem; }
+.tarjeta .precio { font-weight: 700; color: var(--rosa-oscuro); }
+.tarjeta .precio small { font-weight: 400; color: var(--suave); }
+.tarjeta p { margin: 0; color: var(--suave); font-size: .95rem; }
+.colores { display: flex; flex-wrap: wrap; gap: .3rem; }
+.colores span { font-size: .78rem; background: var(--fondo); border: 1px solid var(--borde); padding: .1rem .55rem; border-radius: 999px; }
+.tarjeta .boton { margin-top: auto; text-align: center; padding: .6rem 1rem; font-size: .95rem; }
+
+.encargos {
+  text-align: center; background: var(--papel); border: 1px solid var(--borde);
+  border-radius: var(--radio); margin: 2rem auto !important; max-width: 760px !important;
+}
+.encargos p { color: var(--suave); max-width: 50ch; margin: 0 auto 1.5rem; }
+
+.preguntas { max-width: 760px !important; }
+details { background: var(--papel); border: 1px solid var(--borde); border-radius: 12px; padding: .9rem 1.2rem; margin-bottom: .7rem; }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: .6rem 0 0; color: var(--suave); }
+
+.pie { text-align: center; padding: 2.5rem 1rem; color: var(--suave); font-size: .9rem; border-top: 1px solid var(--borde); }
+.pie p { margin: .3rem 0; }
+
+@media (max-width: 600px) {
+  .cabecera nav { display: none; }
+  main > section { padding-top: 3rem; padding-bottom: 3rem; }
+}

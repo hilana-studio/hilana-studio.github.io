@@ -1,0 +1,107 @@
+{
+  "marca": "Hilana",
+  "lema": "Flores de crochet hechas a mano que no se marchitan nunca",
+  "ciudad": "Córdoba",
+  "whatsapp": "",
+  "instagram": "hilana_studio",
+  "mensaje_pedido": "¡Hola! Me interesa «{producto}». ¿Me cuentas colores y plazo?",
+  "mensaje_encargo": "¡Hola! Quería encargar un ramo personalizado.",
+  "categorias": [
+    "Ramos",
+    "Flores sueltas",
+    "Detalles"
+  ],
+  "productos": [
+    {
+      "id": "ramo-primavera",
+      "nombre": "Ramo Primavera",
+      "categoria": "Ramos",
+      "precio": 35,
+      "desde": true,
+      "descripcion": "7 flores variadas (margaritas, tulipanes y lavanda) con papel kraft y lazo.",
+      "colores": [
+        "Pastel",
+        "Blanco y verde",
+        "A elegir"
+      ],
+      "foto": "img/placeholder.svg",
+      "personalizable": true,
+      "destacado": true
+    },
+    {
+      "id": "ramo-rosas",
+      "nombre": "Ramo de rosas",
+      "categoria": "Ramos",
+      "precio": 45,
+      "desde": true,
+      "descripcion": "12 rosas de crochet con hojas. Ideal para aniversarios y San Valentín.",
+      "colores": [
+        "Rojo",
+        "Rosa",
+        "Blanco"
+      ],
+      "foto": "img/placeholder.svg",
+      "personalizable": true,
+      "destacado": true
+    },
+    {
+      "id": "mini-ramo",
+      "nombre": "Mini ramo",
+      "categoria": "Ramos",
+      "precio": 18,
+      "desde": false,
+      "descripcion": "3 flores pequeñas, perfecto como detalle o regalo de última hora.",
+      "colores": [
+        "Variado"
+      ],
+      "foto": "img/placeholder.svg",
+      "personalizable": false,
+      "destacado": false
+    },
+    {
+      "id": "girasol",
+      "nombre": "Girasol",
+      "categoria": "Flores sueltas",
+      "precio": 7,
+      "desde": false,
+      "descripcion": "Girasol con tallo de alambre forrado, de unos 35 cm.",
+      "colores": [
+        "Amarillo"
+      ],
+      "foto": "img/placeholder.svg",
+      "personalizable": false,
+      "destacado": false
+    },
+    {
+      "id": "tulipan",
+      "nombre": "Tulipán",
+      "categoria": "Flores sueltas",
+      "precio": 5,
+      "desde": false,
+      "descripcion": "Tulipán suelto para montar tu propio ramo o ponerlo en un jarrón.",
+      "colores": [
+        "Rojo",
+        "Rosa",
+        "Amarillo",
+        "Lila"
+      ],
+      "foto": "img/placeholder.svg",
+      "personalizable": false,
+      "destacado": false
+    },
+    {
+      "id": "llavero-flor",
+      "nombre": "Llavero flor",
+      "categoria": "Detalles",
+      "precio": 6,
+      "desde": false,
+      "descripcion": "Llavero con una flor pequeña. Muy pedido como detalle para invitados.",
+      "colores": [
+        "A elegir"
+      ],
+      "foto": "img/placeholder.svg",
+      "personalizable": true,
+      "destacado": false
+    }
+  ]
+}
